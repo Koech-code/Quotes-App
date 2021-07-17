@@ -1,6 +1,6 @@
-# Qutes
+# Quotes-APP
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.1.
+This is a website application where one can see quotes from Authors, they can also vote on them.
 
 ## Development server
 
