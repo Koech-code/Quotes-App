@@ -39,3 +39,13 @@ h1 {
 /* button {
   width: 40vw;
 } */
+
+#up,
+#down {
+  width: 5vw;
+  font-size: 40px;
+}
+
+mat-card {
+  background: rgba(0, 0, 0, .06);
+}

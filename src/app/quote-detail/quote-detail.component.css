@@ -2,3 +2,14 @@
   font-size: 20px;
   text-shadow: 1px 1px 0.9px cadetblue;
 }
+
+
+#up,
+#down {
+  width: 5vw;
+  font-size: 40px;
+}
+
+mat-card {
+  background: rgba(0, 0, 0, .06);
+}
