@@ -22,6 +22,7 @@ This is a website application where one can see quotes from Authors, they can al
 ```
 $ git clone https://github.com/Koech-code/Quotes-App.git
 
+```
 
 
 ## Development server
