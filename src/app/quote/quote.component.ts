@@ -14,6 +14,12 @@ export class QuoteComponent implements OnInit {
     new Quote("C.S LEWIS", "https://cutt.ly/dmCPJVg", " Integrity is doing the right thing even when no one is watching.", ""),
     new Quote("LILLIAN DICKSON", "https://cutt.ly/dmCPMVz", "Life is like a coin.You spend it anyway you wish, but you only spend it once.", ""),
   ]
+  addNewQuote(quote: any) {
+    let quoteLength = this.quotes.length;
+    quote.id = quoteLength + 1;
+    this.quotes.push(quote)
+  }
+
   toggleQuotes(index: any) {
     this.quotes[index].showQuotes = !this.quotes[index].showQuotes;
   }
@@ -28,6 +34,7 @@ export class QuoteComponent implements OnInit {
 
   }
 
+  myDate = Date.now();
 
   constructor() { }
 
