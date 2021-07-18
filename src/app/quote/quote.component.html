@@ -4,12 +4,17 @@
     <hr>
     <ul>
       <li *ngFor='let quote of quotes; let i=index'>
-        {{quote.author}}
+        <h4>{{quote.author}}</h4>
+        <br>
+        <img src="{{quote.image}}"/>
         <br>
         <button (click)='toggleQuotes(i)'>Toggle</button>
         <app-quote-detail *ngIf='quote.showQuotes' [quote]='quote' (isComplete) = 'completeQuote($event,i)'></app-quote-detail>
       </li>
     </ul>
   </div>
-  <app-quotes-form></app-quotes-form>
+  <div>
+    <app-quotes-form></app-quotes-form>
+  </div>
 </div>
+
