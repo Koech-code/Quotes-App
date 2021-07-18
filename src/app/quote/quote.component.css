@@ -4,3 +4,29 @@ img {
   margin-bottom: 1em;
   border-radius: 10px;
 }
+
+/* #line {
+
+  float: right;
+} */
+
+.material {
+  max-width: 800px;
+  margin: auto;
+  padding: 1em;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  background-color: green;
+  color: whitesmoke;
+  font-weight: bolder;
+  border-radius: 10px;
+}
+
+#author {
+  max-width: 800px;
+  width: 450px;
+  margin-top: 1%;
+}
