@@ -6,10 +6,10 @@ import { Quote } from './quote'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  quotes: string[];
+  // quotes: string[];
 
-  constructor() {
-    this.quotes = ["ABRAHAM LINCOLN", "HILLARY CLINTON", "WILLIAM SHAKESPEARE", "C.S LEWIS", "LILLIAN DICKSON"]
-  }
+  // constructor() {
+  //   this.quotes = ["ABRAHAM LINCOLN", "HILLARY CLINTON", "WILLIAM SHAKESPEARE", "C.S LEWIS", "LILLIAN DICKSON"]
+  // }
 
 }
