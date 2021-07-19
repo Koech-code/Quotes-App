@@ -4,7 +4,7 @@
             <h3 class="text-center">Create a new quote</h3>
         </mat-card-title>
         <hr>
-        <form (ngSubmit)="submitMovie()" quoteForm="ngForm">
+        <form (ngSubmit)="submitQuote()" #myForm='ngForm' quoteForm="ngForm">
             <div class="row">
                 <div class="form-group">
                     <label for="author">Author</label>
@@ -34,7 +34,7 @@
                 <input type="text" id="image" [(ngModel)]="newQuote.image" name="image" #image="ngModel">
             </div>
                 <div class="add">
-                    <button type="submit" class="btn btn-success">Write a quote</button>
+                    <button type="submit" class="btn btn-success" >Write a quote</button>
                 </div>
         </form>
     </div>

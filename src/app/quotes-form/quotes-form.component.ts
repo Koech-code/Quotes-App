@@ -1,4 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { Quote } from '../quote';
 
 @Component({
@@ -7,14 +8,16 @@ import { Quote } from '../quote';
   styleUrls: ['./quotes-form.component.css']
 })
 export class QuotesFormComponent implements OnInit {
-  newQuote = new Quote("", "", "", "", 0, 0);
+  newQuote = new Quote("", "", "", "", 0, 0, new Date());
   @Output() addQuote = new EventEmitter<Quote>();
+
+  // submitQuote(form: NgForm)
 
   constructor() { }
 
   ngOnInit(): void {
   }
-  submitMovie() {
+  submitQuote() {
     this.addQuote.emit(this.newQuote);
   }
 

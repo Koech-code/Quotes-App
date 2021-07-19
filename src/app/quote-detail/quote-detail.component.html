@@ -5,13 +5,15 @@
 <button (click)="doneWithQuote(true)" class="btn btn-danger">Delete</button>
 <div id="up">
     <mat-card>
-      <i (click)="upVote(true)" class="fa fa-thumbs-up up"></i>
+      <i (click)="upVote(true)" class="fa fa-thumbs-up "></i>
     </mat-card>
+    <br>
+    <p> {{quote.upVote}} </p>
   </div>
   <br>
   <div id="down">
     <mat-card>
-      <i  (click)="downVote(true)" class="fa fa-thumbs-down">
-        
-      </i></mat-card>
+      <i  (click)="downVote(true)" class="fa fa-thumbs-down"></i>
+    </mat-card>
+    <p> {{quote.downVote}} </p>
   </div>

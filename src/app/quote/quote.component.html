@@ -2,7 +2,9 @@
   <div>
     <div class="material">
       <mat-card>
-        <h1>Classy Quotes</h1>
+        <div class="header">
+          <h1 >Classy Quotes</h1>
+        </div>
       </mat-card>
     </div>
     <hr>
@@ -15,29 +17,17 @@
                   </mat-card>
                 </div>
                 <br>
-                <div>{{myDate|date:'mediumTime'}}</div>
+              <!-- <p>Updated {{quote.timePassed|date}} ago</p> -->
                 <br>
+                <p>Last Updated{{quote.timePassed | timeCount }} days</p>
                 <img src="{{quote.image}}"/>
                 <br>
                 <button (click)='toggleQuotes(i)' class="btn btn-info toggle">Toggle quote</button>
-                <app-quote-detail *ngIf='quote.showQuotes' [quote]='quote' (isComplete) = 'completeQuote($event,i)'></app-quote-detail>
-                
-                
+                <app-quote-detail *ngIf='quote.showQuotes' [quote]='quote' (isComplete) = 'completeQuote($event,i)' (isUpVote)="upVote($event, i)"
+                (isDownVote)="downVote($event, i)"></app-quote-detail>
                 <br>
                 <br>
-                <!-- <div id="up">
-                  <mat-card>
-                    <i (click)="upVote(true)" class="fa fa-thumbs-up up"></i>
-                  </mat-card>
-                </div>
-                <br>
-                <div id="down">
-                  <mat-card>
-                    <i  (click)="downVote(true)" class="fa fa-thumbs-down">
-                      
-                    </i></mat-card>
-                </div> -->
-              </div>
+               </div>
   
   </div>
 
